@@ -5,16 +5,17 @@ import ImageCap from './ImageCap/ImageCap';
 import Title from './Title/Title';
 import Description from './Description/Description';
 import BtnAction from './BtnAction/BtnAction';
+import CardBody from './CardBody/CardBody';
 
 function Card(props) {
   return (
     <div className='Card'>
       {props.imgSrc ? <ImageCap {...props} /> : null}
-      <div className='Card_body'>
+      <CardBody>
         <Title {...props} />
         <Description {...props} />
         <BtnAction {...props} />
-      </div>
+      </CardBody>
     </div>
   );
 }
