@@ -2,8 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Description(props) {
-  const { text } = props;
+function Description({ text }) {
   return <p className='Description'>{text}</p>;
 }
 

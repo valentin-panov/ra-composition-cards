@@ -2,8 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Title(props) {
-  const { title } = props;
+function Title({ title }) {
   return <h5 className='Title'>{title}</h5>;
 }
 

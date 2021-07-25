@@ -7,14 +7,14 @@ import Description from './Description/Description';
 import BtnAction from './BtnAction/BtnAction';
 import CardBody from './CardBody/CardBody';
 
-function Card(props) {
+function Card({ imgSrc, alt, title, text, actionLink, actionCall }) {
   return (
     <div className='Card'>
-      {props.imgSrc ? <ImageCap {...props} /> : null}
+      {imgSrc ? <ImageCap imgSrc={imgSrc} alt={alt} /> : null}
       <CardBody>
-        <Title {...props} />
-        <Description {...props} />
-        <BtnAction {...props} />
+        <Title title={title} />
+        <Description text={text} />
+        <BtnAction actionLink={actionLink} actionCall={actionCall} />
       </CardBody>
     </div>
   );

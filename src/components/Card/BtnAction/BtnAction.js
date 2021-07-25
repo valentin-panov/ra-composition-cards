@@ -2,8 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function BtnAction(props) {
-  const { actionLink, actionCall } = props;
+function BtnAction({ actionLink, actionCall }) {
   return (
     <a className='BtnAction' href={actionLink}>
       {actionCall}

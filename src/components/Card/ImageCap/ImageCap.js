@@ -2,8 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function ImageCap(props) {
-  const { imgSrc, alt } = props;
+function ImageCap({ imgSrc, alt }) {
   return (
     <div className='ImageCap'>
       <img className='ImageCap_img' src={imgSrc} alt={alt} />

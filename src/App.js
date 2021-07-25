@@ -12,7 +12,7 @@ function App() {
   };
   const card2 = {
     title: `Another card title`,
-    text: `Some quick example text to build on the card title and make up the bulk of the card's content.`,
+    text: `Another quick example text to build on the card title and make up the bulk of the card's content.`,
     actionLink: `#`,
     actionCall: `Go somewhere`,
   };
